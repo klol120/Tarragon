@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #012d1d;
+  --color-primary-container: #1b4332;
+  --color-primary-fixed: #c1ecd4;
+  --color-on-primary: #ffffff;
+  
+  --color-background: #fcf9f8;
+  --color-surface: #fcf9f8;
+  --color-on-surface: #1b1c1c;
+  --color-on-surface-variant: #414844;
+  
+  --color-surface-container-low: #f6f3f2;
+  --color-surface-container-high: #eae7e7;
+  --color-surface-container-highest: #e4e2e1;
+  
+  --color-secondary-container: #e8e2d4;
+  --color-on-secondary-container: #676459;
+  
+  --color-tertiary-container: #7e000b;
+  --color-lebanese-red: #ba1a1a;
+  
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-on-surface);
+  }
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.shadow-soft {
+  box-shadow: 0px 4px 20px rgba(27, 67, 50, 0.08);
+}
+
+.testimonial-shadow {
+  box-shadow: 0px 4px 20px rgba(27, 67, 50, 0.08);
+}
+
+.testimonial-shadow:hover {
+  box-shadow: 0px 8px 30px rgba(27, 67, 50, 0.12);
+}

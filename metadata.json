@@ -1,0 +1,8 @@
+{
+  "name": "Tarragon Middle East Market",
+  "description": "A responsive website for Tarragon Middle East Market, a Lebanese grocery store in Miami, featuring home, menu, products, about, reviews, and contact pages.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
