@@ -109,7 +109,7 @@ export default function Footer() {
 
         <div className="border-t border-outline-variant/30 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center">
           <p className="text-sm text-on-surface-variant opacity-70">
-            © 2024 Tarragon Middle East Market. Authentic Lebanese Heritage.
+            © 2026 Tarragon Middle East Market. Authentic Lebanese Heritage.
           </p>
           <div className="flex gap-6 text-sm text-on-surface-variant opacity-70">
             <a href="#" className="hover:text-primary">Privacy Policy</a>
