@@ -2,11 +2,13 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, Search, ShoppingBasket, Phone, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import { useCart } from '../context/CartContext';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const { cartCount } = useCart();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -88,10 +90,14 @@ export default function Navbar() {
             >
               <Search className="w-5 h-5" />
             </Link>
-            <button className="p-2 hover:bg-primary/5 rounded-full transition-colors relative">
+            <Link to="/cart" aria-label="Open cart" className="p-2 hover:bg-primary/5 rounded-full transition-colors relative">
               <ShoppingBasket className="w-5 h-5" />
-              <span className="absolute top-1 right-1 w-2 h-2 bg-lebanese-red rounded-full"></span>
-            </button>
+              {cartCount > 0 && (
+                <span className="absolute -top-1 -right-1 min-w-5 h-5 px-1 bg-lebanese-red text-white rounded-full text-[11px] font-bold flex items-center justify-center">
+                  {cartCount}
+                </span>
+              )}
+            </Link>
           </div>
         </div>
       </div>
