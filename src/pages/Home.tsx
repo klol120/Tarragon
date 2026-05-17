@@ -1,4 +1,4 @@
-import { ArrowRight, Star, MapPin, ShoppingBasket, Store } from 'lucide-react';
+import { ArrowRight, Star, MapPin, ShoppingBasket, Clock } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 
@@ -87,7 +87,7 @@ export default function Home() {
                 url: "https://www.google.com/maps/place/Tarragon+Middle+East+Market/@25.6945535,-80.3003,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9c7956f125cd7:0x710f0ca079fd6883!8m2!3d25.6945535!4d-80.3003!16s%2Fg%2F1th7nq27"
               },
               { label: "Lebanese Specialties", icon: <ShoppingBasket className="text-tertiary-container" />, sub: "Authentic & imported" },
-              { label: "In-store Pickup", icon: <Store className="text-secondary-container" />, sub: "Fresh daily" },
+              { label: "Tue-Sun", icon: <Clock className="text-secondary-container" />, sub: "8 AM to 6 PM" },
             ].map((info, idx) => {
               const Content = (
                 <div className="flex items-center gap-5">
@@ -197,7 +197,7 @@ export default function Home() {
           <div className="max-w-xl text-center md:text-left">
             <h2 className="text-4xl font-bold mb-6 text-primary-fixed">The Kitchen at Tarragon</h2>
             <p className="text-xl opacity-90 leading-relaxed mb-8">
-              Freshly prepared Lebanese classics made to order. From crispy falafel to tender shawarma and hand-rolled grape leaves.
+              Freshly prepared Lebanese classics made daily, from warm pies and creamy dips to hand-rolled grape leaves.
             </p>
             <Link to="/menu" className="inline-flex px-10 py-4 bg-primary-fixed text-primary font-bold rounded-full hover:scale-105 active:scale-95 transition-all shadow-xl shadow-black/20">
               See the Full Menu

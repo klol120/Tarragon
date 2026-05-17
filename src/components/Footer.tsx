@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Instagram, MapPin, Phone, Mail, Send } from 'lucide-react';
+import { Clock, Instagram, MapPin, Phone, Send } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -64,6 +64,15 @@ export default function Footer() {
                   <Phone className="w-4 h-4 text-primary" />
                 </div>
                 <p className="text-base leading-none">+1 305-663-1121</p>
+              </div>
+              <div className="flex items-start gap-4 text-on-surface-variant">
+                <div className="w-5 h-5 flex items-center justify-center shrink-0">
+                  <Clock className="w-4 h-4 text-primary" />
+                </div>
+                <p className="text-base leading-relaxed">
+                  Tuesday-Sunday<br />
+                  8 AM to 6 PM
+                </p>
               </div>
               <a 
                 href="https://www.instagram.com/tarragon_middle_east_market/"

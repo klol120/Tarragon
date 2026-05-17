@@ -28,14 +28,19 @@ export default function Navbar() {
   return (
     <header 
       id="main-nav"
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-surface/90 backdrop-blur-md shadow-sm border-b border-outline-variant/30 py-3' : 'bg-transparent py-5'}`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        isScrolled || isMobileMenuOpen
+          ? 'bg-surface shadow-sm border-b border-outline-variant/30 py-3'
+          : 'bg-transparent py-5'
+      }`}
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center">
         <div className="flex items-center gap-4">
           <button 
             id="mobile-menu-toggle"
             onClick={() => setIsMobileMenuOpen(true)}
-            className="text-primary md:hidden p-1 hover:bg-primary/5 rounded-lg transition-colors"
+            aria-label="Open navigation menu"
+            className="text-primary md:hidden p-2 bg-surface/95 border border-outline-variant/30 shadow-sm hover:bg-primary-fixed rounded-xl transition-colors"
           >
             <Menu className="w-6 h-6" />
           </button>
@@ -92,19 +97,20 @@ export default function Navbar() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 md:hidden"
+              className="fixed inset-0 bg-primary z-50 md:hidden"
             />
             <motion.div
               initial={{ x: '-100%' }}
               animate={{ x: 0 }}
               exit={{ x: '-100%' }}
-              className="fixed inset-y-0 left-0 w-full max-w-[280px] bg-surface z-50 md:hidden p-6 shadow-2xl"
+              className="fixed inset-y-0 left-0 z-50 flex w-[86vw] max-w-[340px] flex-col bg-[#fcf9f8] p-6 shadow-2xl border-r border-outline-variant/40 md:hidden"
             >
               <div className="flex justify-between items-center mb-8">
                 <span className="text-xl font-bold text-primary">Tarragon Market</span>
                 <button 
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="p-2 hover:bg-primary/5 rounded-full transition-colors"
+                  aria-label="Close navigation menu"
+                  className="p-2 bg-surface-container-low hover:bg-primary-fixed rounded-full transition-colors"
                 >
                   <X className="w-6 h-6 text-on-surface-variant" />
                 </button>
@@ -126,10 +132,10 @@ export default function Navbar() {
                 ))}
               </nav>
               <div className="mt-auto pt-8">
-                <button className="w-full flex items-center justify-center gap-3 bg-primary text-white py-4 rounded-2xl font-bold shadow-lg shadow-primary/20">
+                <a href="tel:+13056631121" className="w-full flex items-center justify-center gap-3 bg-primary text-white py-4 rounded-2xl font-bold shadow-lg shadow-primary/20">
                   <Phone className="w-5 h-5" />
                   Call Now
-                </button>
+                </a>
               </div>
             </motion.div>
           </>

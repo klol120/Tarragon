@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { MapPin, Phone, Instagram, Send, Map } from 'lucide-react';
+import { MapPin, Phone, Instagram, Send, Map, Clock } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -54,6 +54,19 @@ export default function Contact() {
                 <div>
                   <h3 className="text-2xl font-bold text-primary mb-3">Phone</h3>
                   <p className="text-lg text-on-surface-variant">+1 305-663-1121</p>
+                </div>
+              </div>
+
+              <div className="flex gap-6">
+                <div className="p-4 bg-primary-fixed rounded-2xl shrink-0 h-fit">
+                  <Clock className="w-7 h-7 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-primary mb-3">Hours</h3>
+                  <p className="text-lg text-on-surface-variant leading-relaxed">
+                    Tuesday-Sunday<br />
+                    8 AM to 6 PM
+                  </p>
                 </div>
               </div>
 
@@ -125,7 +138,7 @@ export default function Contact() {
              <div className="absolute bottom-10 left-10 right-10 bg-white/90 backdrop-blur-md p-6 rounded-3xl shadow-xl flex justify-between items-center">
                 <div>
                    <p className="font-bold text-primary text-lg">South Miami</p>
-                   <p className="text-sm text-on-surface-variant font-medium">Open until 9:00 PM today</p>
+                   <p className="text-sm text-on-surface-variant font-medium">Tuesday-Sunday, 8 AM to 6 PM</p>
                 </div>
                 <button className="p-4 bg-primary text-white rounded-2xl hover:bg-primary-container transition-colors">
                   <Send className="w-5 h-5" />

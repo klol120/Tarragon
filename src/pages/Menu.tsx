@@ -14,15 +14,6 @@ export default function Menu() {
 
   const menuSections = [
     {
-      title: "Sandwiches",
-      subtitle: "Wrapped in fresh pita with traditional garnishes.",
-      items: [
-        { name: "Falafel Sandwich", price: "$4.99", desc: "Crispy chickpea fritters, tahini, parsley, tomatoes, and pickled turnips." },
-        { name: "Shawarma Sandwich", price: "$5.99", desc: "Marinated prime cuts, slow-roasted, served with garlic paste and pickles." },
-        { name: "Kibi Sandwich", price: "$5.99", desc: "Traditional spiced ground meat and bulgur, served with house special sauce." },
-      ]
-    },
-    {
       title: "Pies",
       subtitle: "Freshly baked in our stone oven every morning.",
       items: [
