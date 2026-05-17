@@ -47,15 +47,15 @@ export default function Contact() {
                 </div>
               </a>
 
-              <div className="flex gap-6">
-                <div className="p-4 bg-primary-fixed rounded-2xl shrink-0 h-fit">
-                  <Phone className="w-7 h-7 text-primary" />
+              <a href="tel:+13056631121" className="flex gap-6 group">
+                <div className="p-4 bg-primary-fixed rounded-2xl shrink-0 h-fit group-hover:bg-primary transition-colors">
+                  <Phone className="w-7 h-7 text-primary group-hover:text-white transition-colors" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-primary mb-3">Phone</h3>
-                  <p className="text-lg text-on-surface-variant">+1 305-663-1121</p>
+                  <p className="text-lg text-on-surface-variant group-hover:text-primary transition-colors">+1 305-663-1121</p>
                 </div>
-              </div>
+              </a>
 
               <div className="flex gap-6">
                 <div className="p-4 bg-primary-fixed rounded-2xl shrink-0 h-fit">

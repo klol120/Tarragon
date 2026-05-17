@@ -72,14 +72,22 @@ export default function Navbar() {
         </nav>
 
         <div className="flex items-center gap-3 md:gap-6">
-          <button className="hidden lg:flex items-center gap-2 bg-primary text-white px-6 py-2.5 rounded-full font-semibold text-sm hover:scale-105 active:scale-95 transition-all shadow-md shadow-primary/20">
+          <a
+            href="tel:+13056631121"
+            className="hidden lg:flex items-center gap-2 bg-primary text-white px-6 py-2.5 rounded-full font-semibold text-sm hover:scale-105 active:scale-95 transition-all shadow-md shadow-primary/20"
+          >
             <Phone className="w-4 h-4" />
             <span>Call Store</span>
-          </button>
+          </a>
           <div className="flex items-center gap-2 md:gap-4 text-on-surface-variant">
-            <button className="p-2 hover:bg-primary/5 rounded-full transition-colors">
+            <Link
+              to="/products"
+              state={{ focusSearch: true }}
+              aria-label="Search products"
+              className="p-2 hover:bg-primary/5 rounded-full transition-colors"
+            >
               <Search className="w-5 h-5" />
-            </button>
+            </Link>
             <button className="p-2 hover:bg-primary/5 rounded-full transition-colors relative">
               <ShoppingBasket className="w-5 h-5" />
               <span className="absolute top-1 right-1 w-2 h-2 bg-lebanese-red rounded-full"></span>

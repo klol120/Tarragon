@@ -16,10 +16,16 @@ export default function Footer() {
               <a href="https://www.instagram.com/tarragon_middle_east_market/" target="_blank" rel="noopener noreferrer" className="p-2.5 bg-primary/5 text-primary rounded-full hover:bg-primary hover:text-white transition-all">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="p-2.5 bg-primary/5 text-primary rounded-full hover:bg-primary hover:text-white transition-all">
+              <a
+                href="https://www.google.com/maps/place/Tarragon+Middle+East+Market/@25.6945535,-80.3003,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9c7956f125cd7:0x710f0ca079fd6883!8m2!3d25.6945535!4d-80.3003!16s%2Fg%2F1th7nq27"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Tarragon Market on Google Maps"
+                className="p-2.5 bg-primary/5 text-primary rounded-full hover:bg-primary hover:text-white transition-all"
+              >
                 <MapPin className="w-5 h-5" />
               </a>
-              <a href="#" className="p-2.5 bg-primary/5 text-primary rounded-full hover:bg-primary hover:text-white transition-all">
+              <a href="tel:+13056631121" aria-label="Call Tarragon Market" className="p-2.5 bg-primary/5 text-primary rounded-full hover:bg-primary hover:text-white transition-all">
                 <Phone className="w-5 h-5" />
               </a>
             </div>
@@ -59,12 +65,12 @@ export default function Footer() {
                   <span className="text-sm opacity-75">Dadeland North Shopping Center</span>
                 </p>
               </a>
-              <div className="flex items-center gap-4 text-on-surface-variant">
+              <a href="tel:+13056631121" className="flex items-center gap-4 text-on-surface-variant hover:text-primary transition-colors">
                 <div className="w-5 h-5 flex items-center justify-center shrink-0">
                   <Phone className="w-4 h-4 text-primary" />
                 </div>
                 <p className="text-base leading-none">+1 305-663-1121</p>
-              </div>
+              </a>
               <div className="flex items-start gap-4 text-on-surface-variant">
                 <div className="w-5 h-5 flex items-center justify-center shrink-0">
                   <Clock className="w-4 h-4 text-primary" />
